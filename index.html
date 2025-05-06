@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Grocery Store Website</title>
+
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="images/Grocery.logo.png" alt="">
+        </div>
+        <div class="navbar">
+            <a href="#home">home</a>
+            <a href="#product">product</a>
+            <a href="#review">review</a>
+            <a href="#blog">blog</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
+        </div>
+        <!-- search bar -->
+        <form class="search-form" action="/search" method="get">
+            <input type="text" placeholder="Search..." name="search" />
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <!-- end search bar -->
+        <div class="icons">
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+        <!-- login -->
+
+        <form action="#" class="login-form">
+            <h3>login form</h3>
+            <input type="email" id="email" placeholder="enter your email" class="box">
+            <input type="password" id="password" placeholder="enter your password" class="box">
+            <button type="button" class="btn" onclick="validateLogin()">login</button>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">forgot password?</a>
+            </div>
+
+            <div class="login-register">
+                <p>Dont have an account?<a href="./signup.html">Register</a></p>
+            </div>
+
+        </form>
+    </header>
+
+    <!-- end -->
+
+    <!-- home -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>organic Vegetables And Fruits</h3>
+            <a href="#" class="btn"> Order Now </a>
+        </div>
+
+    </section>
+
+    <!-- Home end -->
+    <!--New Product-->
+    <div class="feature">
+        <h3>Vegetables</h3>
+    </div>
+    <section class="product" id="product">
+        <div class="product-box">
+            <div class="image">
+                <img src="images/product-1.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Tomato</div>
+                <div class="productbox">
+                    <div class="price">2$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-box">
+            <div class="image">
+                <img src="images/Product-2.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Potato</div>
+                <div class="productbox">
+                    <div class="price">3$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/Product-3.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Cabbage</div>
+                <div class="productbox">
+                    <div class="price">2$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/Product-4.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Carrot</div>
+                <div class="productbox">
+                    <div class="price">4$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/Product-5.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Onion</div>
+                <div class="productbox">
+                    <div class="price">1$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/Product-6.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Capsicum</div>
+                <div class="productbox">
+                    <div class="price">6$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/Product-7.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Brinjal</div>
+                <div class="productbox">
+                    <div class="price">5$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/Product-8.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Garlic</div>
+                <div class="productbox">
+                    <div class="price">4$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/Product-9.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Bitter gourd</div>
+                <div class="productbox">
+                    <div class="price">8$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/Product-10.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Corn</div>
+                <div class="productbox">
+                    <div class="price">6$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/Radish.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Radish</div>
+                <div class="productbox">
+                    <div class="price">4$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/Rhubarb.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Rhubarb</div>
+                <div class="productbox">
+                    <div class="price">3$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="feature">
+        <h3>fruits</h3>
+    </div>
+    <section class="product" id="product">
+        <div class="product-box">
+            <div class="image">
+                <img src="images/mango.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Mango</div>
+                <div class="productbox">
+                    <div class="price">6$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div>
+                        <div class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/Apple.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Apple</div>
+                <div class="productbox">
+                    <div class="price">3$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/orange.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Orange</div>
+                <div class="productbox">
+                    <div class="price">3$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/grape.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Grape</div>
+                <div class="productbox">
+                    <div class="price">2$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/Watermelon.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Watermelon</div>
+                <div class="productbox">
+                    <div class="price">9$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/Strawberries.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Strawberrie</div>
+                <div class="productbox">
+                    <div class="price">4$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/papaya.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Papaya</div>
+                <div class="productbox">
+                    <div class="price">6$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/cherry.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Cherry</div>
+                <div class="productbox">
+                    <div class="price">7$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/Pomegranate.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Pomegranate</div>
+                <div class="productbox">
+                    <div class="price">3$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/Guava.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Guava</div>
+                <div class="productbox">
+                    <div class="price">2$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/Jackfruit.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Jackfruit</div>
+                <div class="productbox">
+                    <div class="price">5$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-box">
+            <div class="image">
+                <img src="images/Pear.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Pear</div>
+                <div class="productbox">
+                    <div class="price">2$</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product-->
+
+    <!-- review  -->
+    <div class="feature" id="review">
+        <h3>Clients Review</h3>
+    </div>
+    <section class="review">
+        <div class="reviewbox">
+            <div class="contents">
+                <img src="images/review-1.png" alt="">
+                <div class="review-contents">
+                    <div class="name">Emily Johnson</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>I really like this website for veggies and fruits! They have a lot of
+                        different kinds, and everything is super fresh. The website is easy to use, so it's simple
+                        to find what you want.
+                        They also deliver on time, so I always get fresh stuff at my door.
+                        If you want easy shopping and great produce, this is the place!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviewbox">
+            <div class="contents">
+                <img src="images/review-2.png" alt="">
+                <div class="review-contents">
+                    <div class="name">Isabella Martinez</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>I love buying fruits and veggies from this website. The fruits and veggies are always good,
+                        and they have a lot to choose from. The website looks nice and is easy to use.
+                        They also care about where they get their food, which is cool.
+                        If you want good food and an easy website, try this one!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviewbox">
+            <div class="contents">
+                <img src="images/review-3.png" alt="">
+                <div class="review-contents">
+                    <div class="name">Carlos Rodriguez</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>I really like this website for fruits and veggies. They have a lot of choices,
+                        and the prices are good. The website is easy to use, and they always send my stuff on time.
+                        The food is always good quality, and they care about the environment, which is nice.
+                        If you want easy shopping and good food, check this site out!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Review-->
+
+    <!-- blog -->
+    <div class="feature" id="blog">
+        <h3>Our Blog</h3>
+    </div>
+    <div class="blog">
+        <div class="blog-box">
+            <div class="contents">
+                <img src="images/blog-1.png" alt="">
+                <div class="blogcontent">
+                    <h4>The Ultimate Guide to Seasonal Eating: What's In Season Now?</h4>
+                    <p>I really like this website for fruits and veggies. They have a lot of choices,
+                        and the prices are good. The website is easy to use, and they always send my stuff on time.
+                        The food is always good quality, and they care about the environment, which is nice.
+                        If you want easy shopping and good food, check this site out!
+                    </p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="blog-box">
+            <div class="contents">
+                <img src="images/blog-2.png" alt="">
+                <div class="blogcontent">
+                    <h4>The Health Benefits of a Colorful Plate: Eating a Rainbow of Fruits and Vegetables</h4>
+                    <p>Explore the nutritional benefits of consuming a variety of colorful fruits and vegetables.
+                        Break down the unique health benefits associated with different colors and provide readers
+                        with insights into how they can create vibrant,
+                        nutritious meals for themselves and their families.This post could also feature interviews with
+                        farmers or suppliers to add a personal touch
+                    </p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-box">
+            <div class="contents">
+                <img src="images/blog-3.png" alt="">
+                <div class="blogcontent">
+                    <h4>Behind the Scenes: A Glimpse into Our Farm-to-Table Journey</h4>
+                    <p>
+                        Take your readers on a journey from farm to table. Showcase the sourcing and quality
+                        control processes that ensure the freshness and excellence of the produce on your website.
+                        Feature interviews with local farmers, discuss sustainable practices, and emphasize the efforts
+                        made to provide customers with the best fruits and vegetables.
+                    </p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Blog end -->
+
+    <!-- about -->
+    <div class="feature" id="about">
+        <h3>About Us</h3>
+    </div>
+    <div class="about-container">
+        <div class="about-image">
+            <img src="images/about-1.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2>Our Shop</h2>
+            <p>Welcome to our organic food store! We are passionate about providing fresh, healthy, and organic
+                produce</p>
+            <p> to our community. Our commitment is to promote a sustainable and eco-friendly lifestyle through the food
+                choices we offer.</p>
+            <p>At our shop, you'll find a wide variety of organic fruits, vegetables, grains, and more. We source our
+                products from local farmers who share our values of organic and sustainable farming practices.
+            Visit us today and experience the goodness of nature in every bite!</p>
+
+        </div>
+
+    </div>
+
+    <!-- end -->
+
+    <!-- contact -->
+    <div class="feature" id="contact">
+        <h3>Contact Us</h3>
+    </div>
+    <section class="contact">
+        <form>
+            <input type="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+
+            <input name="" id="" placeholder="Your Message" required></input>
+            <input type="submit" name="" value="Submit" class="contact-btn">
+        </form>
+    </section>
+
+    <!--Footer section-->
+    <footer class="footer">
+        <div class="footer-box">
+            <h4>Contact</h4>
+            <p>Address: Asulia, Dhaka, Bangladesh</p>
+            <p>Phone: 01744546898</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <h4>About</h4>
+            <a href="#about">About Us</a>
+            <a href="#">Delivery Information</a>
+        </div>
+
+        <div class="footer-box">
+            <h4>My Account</h4>
+            <a href="#login-form">Sign In</a>
+            <a href="#">View Cart</a>
+        </div>
+    </footer>
+    <!--Footer section-->
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
